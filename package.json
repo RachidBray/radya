@@ -60,14 +60,14 @@
     "url": "git@github.com:RachidBray/wp-starter-theme.git"
   },
   "scripts": {
-    "build": "webpack --config configuration/webpack.dev.config.js --mode=development",
-    "watch": "webpack --config configuration/webpack.dev.config.js --mode=development --watch",
+    "build": "webpack --config config/webpack.dev.config.js --mode=development",
+    "watch": "webpack --config config/webpack.dev.config.js --mode=development --watch",
     "bundle": "npm install && npm run watch",
-    "dev": "webpack serve --config configuration/webpack.dev.config.js --mode=development",
-    "production": "webpack --config configuration/webpack.prod.config.js --mode=production",
+    "dev": "webpack serve --config config/webpack.dev.config.js --mode=development",
+    "production": "webpack --config config/webpack.prod.config.js --mode=production",
     "lint:sass": "sass-lint -v -q",
     "lint:js": "eslint --ext .js src/js/",
-    "stats": "webpack --config configuration/webpack.prod.config.js --mode=production --json > assets/stats.json && webpack-bundle-analyzer assets/stats.json"
+    "stats": "webpack --config config/webpack.prod.config.js --mode=production --json > assets/stats.json && webpack-bundle-analyzer assets/stats.json"
   },
   "target": "web"
 }

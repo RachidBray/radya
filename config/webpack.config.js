@@ -8,7 +8,7 @@ const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
-const environment = require('./configuration/environment');
+const environment = require('./environment');
 
 module.exports = {
   entry: {
