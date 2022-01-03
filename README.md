@@ -125,7 +125,7 @@ $ npm ci
   * **`server`**: configure development server, specify `host`, `port`. Refer to the full development server configuration options for [`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/).
   * **`limits`**: configure file size thresholds for assets optimizations.
     * Image/Font files size in bytes. Below this value the image file will be served as Data URL (_inline base64_).
-  * **`paths`**: `src` or `dist` directories names and file system location.
+  * **`paths`**: `src` or `assets` directories names and file system location.
 
 ## Additional `webpack` configuration
 
@@ -191,13 +191,13 @@ $ npm run production
 
 ## Get Built Assets
 
-* _CSS_ files are located under `/dist/css/`
-* _JavaScript_ files with support of _ES6 / ECMAScript 2016(ES7)_ files are located under `/dist/js/`
-* _Images_ are located under `/dist/images/`
-  * Images part of the _design_ (_usually referenced in the CSS_) are located under `/dist/images/design/`
-  * Images part of the _content_ (_usually referenced via `<img>` tags_) are located under `/dist/images/content/`
-* _Fonts_ are located under `/dist/fonts/`
-* _HTML_ files are located under `/dist/`
+* _CSS_ files are located under `/assets/css/`
+* _JavaScript_ files with support of _ES6 / ECMAScript 2016(ES7)_ files are located under `/assets/js/`
+* _Images_ are located under `/assets/images/`
+  * Images part of the _design_ (_usually referenced in the CSS_) are located under `/assets/images/design/`
+  * Images part of the _content_ (_usually referenced via `<img>` tags_) are located under `/assets/images/content/`
+* _Fonts_ are located under `/assets/fonts/`
+* _HTML_ files are located under `/assets/`
 
 # Run Code Style Linters
 
