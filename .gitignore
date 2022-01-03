@@ -1,23 +1,22 @@
-# ignore everything in the root except the "wp-content" directory.
-!wp-content/
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# ignore everything in the "wp-content" directory, except:
-# "mu-plugins", "plugins", "themes" directory
-wp-content/*
-!wp-content/mu-plugins/
-!wp-content/plugins/
-!wp-content/themes/
+# Mac OS X
+.DS_Store
+._.*
+._*
 
-# ignore these plugins
-wp-content/plugins/hello.php
+# Ignore local editor
+.project
+.settings
+.idea
+*.swp
+tags
+nbproject/*
 
-# ignore specific themes
-wp-content/themes/twenty*/
+# Windows
+Thumbs.db
 
-# ignore node dependency directories
+npm-debug.log
+
 node_modules/
-
-# ignore log files and databases
-*.log
-*.sql
-*.sqlite
+dist/
