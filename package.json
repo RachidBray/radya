@@ -67,7 +67,11 @@
     "production": "webpack --config config/webpack.prod.config.js --mode=production",
     "lint:sass": "sass-lint -v -q",
     "lint:js": "eslint --ext .js src/js/",
-    "stats": "webpack --config config/webpack.prod.config.js --mode=production --json > assets/stats.json && webpack-bundle-analyzer assets/stats.json"
+    "stats": "webpack --config config/webpack.prod.config.js --mode=production --json > assets/stats.json && webpack-bundle-analyzer assets/stats.json",
+    "zip": "dir-archiver --src . --dest ../listimia.zip --exclude .DS_Store config .git package.json src .gitignore README.md package-lock.json node_modules .babelrc .eslintrc .sasslintrc postcss.config.js"
   },
-  "target": "web"
+  "target": "web",
+  "dependencies": {
+    "dir-archiver": "^1.2.0"
+  }
 }
