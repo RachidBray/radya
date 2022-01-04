@@ -1,15 +1,15 @@
 {
   "author": "Rachid Braymi <info@addictedtoweb.com> (https://www.addictedtoweb.com/)",
-  "name": "@rachidbray/wp-starter-theme",
+  "name": "@rachidbray/radya",
   "version": "1.0.0",
   "description": "Wordpress starter theme based on Webpack with SASS/PostCSS and babel ES6/7 support.",
-  "homepage": "https://github.com/rachidbray/wp-starter-theme",
+  "homepage": "https://github.com/rachidbray/radya",
   "browserslist": [
     "last 2 versions",
     "> 5%"
   ],
   "bugs": {
-    "url": "https://github.com/RachidBray/wp-starter-theme/issues"
+    "url": "https://github.com/RachidBray/radya/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
@@ -44,6 +44,11 @@
     "webpack-dev-server": "^4.4.0",
     "webpack-merge": "^5.8.0"
   },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
   "engines": {
     "node": "^12 || >=14"
   },
@@ -57,7 +62,7 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git@github.com:RachidBray/wp-starter-theme.git"
+    "url": "git@github.com:RachidBray/radya.git"
   },
   "scripts": {
     "build": "webpack --config config/webpack.dev.config.js --mode=development",
@@ -68,7 +73,7 @@
     "lint:sass": "sass-lint -v -q",
     "lint:js": "eslint --ext .js src/js/",
     "stats": "webpack --config config/webpack.prod.config.js --mode=production --json > assets/stats.json && webpack-bundle-analyzer assets/stats.json",
-    "zip": "dir-archiver --src . --dest ../listimia.zip --exclude .DS_Store config .git package.json src .gitignore README.md package-lock.json node_modules .babelrc .eslintrc .sasslintrc postcss.config.js"
+    "zip": "dir-archiver --src . --dest ../myTheme.zip --exclude .DS_Store config .git package.json src .gitignore README.md package-lock.json node_modules .babelrc .eslintrc .sasslintrc"
   },
   "target": "web",
   "dependencies": {
