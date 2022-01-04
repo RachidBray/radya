@@ -73,7 +73,7 @@
     "lint:sass": "sass-lint -v -q",
     "lint:js": "eslint --ext .js src/js/",
     "stats": "webpack --config config/webpack.prod.config.js --mode=production --json > assets/stats.json && webpack-bundle-analyzer assets/stats.json",
-    "zip": "dir-archiver --src . --dest ../myTheme.zip --exclude .DS_Store config .git package.json src .gitignore README.md package-lock.json node_modules .babelrc .eslintrc .sasslintrc"
+    "zip": "dir-archiver --src . --dest ../radya.zip --exclude .DS_Store config .git package.json src .gitignore README.md package-lock.json node_modules .babelrc .eslintrc .sasslintrc"
   },
   "target": "web",
   "dependencies": {
