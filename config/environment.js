@@ -9,8 +9,7 @@ module.exports = {
     output: path.resolve(__dirname, '../assets/'),
   },
   server: {
-    host: 'localhost',
-    port: 8000,
+    proxy: 'http://listimiav2.local/',
   },
   limits: {
     /* Image files size in bytes. Below this value the image file will be served as DataURL (inline base64). */

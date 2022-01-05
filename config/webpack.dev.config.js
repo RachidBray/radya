@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 const { merge } = require('webpack-merge');
-
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const webpackConfiguration = require('./webpack.config');
 const environment = require('./environment');
 
@@ -10,22 +10,6 @@ module.exports = merge(webpackConfiguration, {
   /* Manage source maps generation process */
   devtool: 'eval-source-map',
 
-  /* Development Server Configuration */
-  devServer: {
-    static: {
-      directory: environment.paths.output,
-      publicPath: '/',
-      watch: true,
-    },
-    client: {
-      overlay: true,
-    },
-    open: true,
-    compress: true,
-    hot: false,
-    ...environment.server,
-  },
-
   /* File watcher options */
   watchOptions: {
     aggregateTimeout: 300,
@@ -34,5 +18,11 @@ module.exports = merge(webpackConfiguration, {
   },
 
   /* Additional plugins configuration */
-  plugins: [],
+  plugins: [
+    new BrowserSyncPlugin({
+      host: 'localhost',
+      port: 3100,
+      ...environment.server,
+    }),
+  ],
 });

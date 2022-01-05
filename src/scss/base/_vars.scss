@@ -1,20 +1,23 @@
 /**
- * Variables
-*/
+ * Add custom styles
+ *
+ * CSS variables are defined in "theme.json"
+ * https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-json
+ */
 
-/* Typography */
-/* Breakpoints */
-/* Paths */
-/* Grid setup */
-/* Colour palette */
-$black: #000;
-$white: #fff;
-$light-gray: #f1f1f1;
+// Grayscale vars
+$black:     var(--wp--preset--color--black) !default;
+$dark-gray: var(--wp--preset--color--dark-gray) !default;
+$gray:      var(--wp--preset--color--gray) !default;
+$white:     var(--wp--preset--color--white) !default;
 
-$body-background-color: #333;
-$foreground-color: #fff;
-$caption-color: #464646;
-$accent-color: #999;
-$link-color: #ec1f4e;
+// Color vars
+$charcoal:  var(--wp--preset--color--charcoal) !default;
+$green:     var(--wp--preset--color--green) !default;
+$yellow:    var(--wp--preset--color--yellow) !default;
+$orange:    var(--wp--preset--color--orange) !default;
+$red:       var(--wp--preset--color--red) !default;
 
-/* Components */
+// Spacing
+$spacing-vertical:   var(--wp--custom--spacing--vertical) !default;
+$spacing-horizontal: var(--wp--custom--spacing--horizontal) !default;

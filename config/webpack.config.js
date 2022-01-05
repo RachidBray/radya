@@ -12,7 +12,8 @@ const environment = require('./environment');
 
 module.exports = {
   entry: {
-    app: path.resolve(environment.paths.source, 'js', 'app.js'),
+    main: path.resolve(environment.paths.source, 'js', 'main.js'),
+    rtl: path.resolve(environment.paths.source, 'scss', 'rtl.scss'),
   },
   output: {
     filename: 'js/[name].js',

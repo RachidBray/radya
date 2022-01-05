@@ -1,4 +1,4 @@
-import '../scss/app.scss';
+import '../scss/main.scss';
 
 /* Your JS Code goes here */
 
