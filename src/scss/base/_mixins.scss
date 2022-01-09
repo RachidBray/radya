@@ -14,13 +14,31 @@
 }
 
 // Media queries
-@mixin bp($point) {
-  @if $point == large {
-    @media (min-width: 1280px) { @content; }
-  } @else if $point == small {
-    @media (max-width: 1279px) { @content; }
+$breakpoints: (
+  xs: $xs,
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xl: $xl
+) !default;
+
+@mixin bp-min($size) {
+  @media only screen and (min-width: map-get($breakpoints, $size)) {
+    @content;
   }
 }
+@mixin bp-max($size) {
+  @media only screen and (max-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+/*
+// Usage:
+@include bp-min(sm) { 
+    body {color:red}
+}
+*/
 
 // Text selection
 @mixin text-selection($color-selection, $color-selection-bg) {

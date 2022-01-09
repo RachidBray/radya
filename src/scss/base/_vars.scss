@@ -21,3 +21,10 @@ $red:       var(--wp--preset--color--red) !default;
 // Spacing
 $spacing-vertical:   var(--wp--custom--spacing--vertical) !default;
 $spacing-horizontal: var(--wp--custom--spacing--horizontal) !default;
+
+// Breakpoints
+$xs: "20em";
+$sm: "30em";
+$md: "40em";
+$lg: "48em";
+$xl: "64em";
