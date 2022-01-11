@@ -13,7 +13,6 @@ $radya_inc_dir = 'inc';
 $radya_includes = array(
 	'/setup.php',                           // Theme setup and custom theme supports.
 	'/enqueue.php',                         // Enqueue scripts and styles.
-	'/template-parts.php',                  // Custom template parts
 	'/patterns.php',                  		// Block Patterns
 );
 

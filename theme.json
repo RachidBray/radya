@@ -16,11 +16,6 @@
 			"name": "footer",
 			"title": "Footer",
 			"area": "footer"
-		},
-		{
-			"name": "query",
-			"title": "Query (The Loop)",
-			"area": "query"
 		}
 	],
 	"settings": {
