@@ -1,4 +1,4 @@
-# Webpack 5 Boilerplate Template
+# Radya: Wordpress starter theme based on Webpack with SASS/PostCSS and babel ES6/7 support.
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2021?logo=github)
 ![webpack-current](https://img.shields.io/badge/webpack-v5.64.0-green?logo=webpack)
