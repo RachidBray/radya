@@ -14,6 +14,7 @@ module.exports = {
   entry: {
     main: path.resolve(environment.paths.source, 'js', 'main.js'),
     rtl: path.resolve(environment.paths.source, 'scss', 'rtl.scss'),
+    editor: path.resolve(environment.paths.source, 'scss', 'editor.scss'),
   },
   output: {
     filename: 'js/[name].js',
