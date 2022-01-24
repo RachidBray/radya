@@ -67,7 +67,7 @@
     "url": "git@github.com:RachidBray/radya.git"
   },
   "scripts": {
-    "build": "webpack --config config/webpack.dev.config.js",
+    "dev": "webpack --config config/webpack.dev.config.js",
     "watch": "webpack --config config/webpack.dev.config.js --watch",
     "prod": "webpack --config config/webpack.prod.config.js",
     "bundle": "npm install && npm run watch",
@@ -78,6 +78,7 @@
   },
   "target": "web",
   "dependencies": {
-    "dir-archiver": "^1.2.0"
+    "dir-archiver": "^1.2.0",
+    "webpack-rtl-plugin": "^2.0.0"
   }
 }
