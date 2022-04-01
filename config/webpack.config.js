@@ -6,10 +6,7 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const {
-  CleanWebpackPlugin
-} = require('clean-webpack-plugin');
-const WebpackRTLPlugin = require('webpack-rtl-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const environment = require('./environment');
 
@@ -17,7 +14,7 @@ module.exports = {
 
   entry: {
     main: path.resolve(environment.paths.source, 'js', 'main.js'),
-    editor: path.resolve(environment.paths.source, 'scss', 'editor.scss'),
+    editor: path.resolve(environment.paths.source, 'js', 'editor.js'),
   },
   output: {
     filename: 'js/[name].js',
@@ -120,13 +117,6 @@ module.exports = {
           ignore: ['*.DS_Store', 'Thumbs.db'],
         },
       }, ],
-    }),
-    new WebpackRTLPlugin({
-      filename: 'css/rtl.css',
-      options: {},
-      plugins: [],
-      diffOnly: true,
-      minify: true,
     }),
   ],
 };

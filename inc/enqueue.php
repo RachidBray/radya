@@ -11,7 +11,7 @@ if ( ! function_exists( 'radya_frontend_assets' ) ) {
         wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/main.css', array(), $theme_version, 'all' ); // main.scss: Compiled custom styles.
 
         if ( is_rtl() ) {
-            wp_enqueue_style( 'rtl', get_template_directory_uri() . '/assets/css/rtl.css', array(), $theme_version, 'all' );
+            wp_enqueue_style( 'rtl', get_template_directory_uri() . '/assets/css/main.rtl.css', array(), $theme_version, 'all' );
         }
 
         // 2. Scripts.

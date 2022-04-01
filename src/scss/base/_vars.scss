@@ -5,6 +5,26 @@
  * https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-json
  */
 
+ body {
+    background: #eee;
+    color: #212121;
+    font-family: sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .float {
+    padding-top: 20px;
+    float: right;
+  }
+  
+  .clear {
+    clear: both;
+    float: none;
+  }
+  
 // Grayscale vars
 $black:     var(--wp--preset--color--black) !default;
 $dark-gray: var(--wp--preset--color--dark-gray) !default;
