@@ -63,6 +63,7 @@ Table of Contents
 
 ## Requirements
 
+* WordPress 5.9+
 * `node` : `^12 || >=14`
 * `npm`
 
@@ -119,21 +120,26 @@ $ npm ci
 * **Image** files are located under `src/img/`
 * **Font** files are located under `src/fonts/`
 
-## Build Assets
+## Built Assets
 
-### One time build assets for development
+* _CSS_ files are located under `/assets/css/`
+* _JavaScript_ files with support of _ES6 / ECMAScript 2016(ES7)_ files are located under `/assets/js/`
+* _Images_ are located under `/assets/img/`
+* _Fonts_ are located under `/assets/fonts/`
 
-```sh
-$ npm run build
-```
+## Available CLI commands
 
-### Build assets and enable source files watcher
+`Radya` comes packed with CLI commands tailored for WordPress theme development :
 
-```sh
-$ npm run watch
-```
+- `npm run watch` : Build assets and enable source files watcher.
+- `npm run dev` : Build assets for development.
+- `npm run prod` : Build and optimize assets for production.
+- `npm run bundle` : Generates a .zip archive for distribution, excluding development and system files.
+- `npm run lint:sass` : Checks all SASS files against [CSS Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/css/).
+- `npm run lint:js` : Checks all JavaScript files against [JavaScript Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/javascript/).
+- `npm run stats` : This will open the visualisaion on the default configuraiton URL `localhost:8888`, you can change this URL or port following the [package](https://github.com/webpack-contrib/webpack-bundle-analyzer#options-for-cli) documentation.
 
-This command is suitable if you develop with external web server.
+
 
 > **Note:** File watching does not work with *NFS* (*Windows*) and virtual machines under *VirtualBox*. Extend the configuration in such cases by:
 
@@ -146,54 +152,6 @@ module.exports = {
 };
 ```
 
-### Start a development server - reloading automatically after each file change.
+Now you're ready to go! The next step is to make an awesome WordPress theme. :)
 
-```sh
-$ npm run dev
-```
-
-# Production 
-
-## Build Assets
-
-Optimize assets for production by:
-
-```sh
-$ npm run production
-```
-
-## Get Built Assets
-
-* _CSS_ files are located under `/assets/css/`
-* _JavaScript_ files with support of _ES6 / ECMAScript 2016(ES7)_ files are located under `/assets/js/`
-* _Images_ are located under `/assets/images/`
-* _Fonts_ are located under `/assets/fonts/`
-
-# Run Code Style Linters
-
-## SASS
-
-```sh
-$ npm run lint:sass
-```
-## JavaScript
-
-```sh
-$ npm run lint:js
-```
-
-# Additional Tools
-
-## Run Assets Bundle Analyzer
-
-```sh
-$ npm run stats
-```
-
-> This will open the visualisaion on the default configuraiton URL `localhost:8888`, you can change this URL or port following the [package](https://github.com/webpack-contrib/webpack-bundle-analyzer#options-for-cli) documentation.
-
-## Continuous Integration
-
-This boilerplate template contains integration with [Travis CI](https://travis-ci.org/). The build system runs all linting scripts and deploys production optimized pages to _GitHub_ pages upon push to the `master` branch. However, note that this deployment flow only works for _Project Pages_, as User and Organization pages [only support the master branch flow](https://help.github.com/articles/user-organization-and-project-pages/).
-
-For more information on how to set up alternative deployment processes, check out the [Travis CI documentation on deployment](https://docs.travis-ci.com/user/deployment). The service can deploy to dozens of cloud providers, including Heroku, AWS, and Firebase.
+Good luck!

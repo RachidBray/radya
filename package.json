@@ -70,11 +70,10 @@
     "dev": "webpack --config config/webpack.dev.config.js",
     "watch": "webpack --config config/webpack.dev.config.js --watch",
     "prod": "webpack --config config/webpack.prod.config.js",
-    "bundle": "npm install && npm run watch",
     "lint:sass": "sass-lint -v -q",
     "lint:js": "eslint --ext .js src/js/",
     "stats": "webpack --config config/webpack.prod.config.js --json > assets/stats.json && webpack-bundle-analyzer assets/stats.json",
-    "zip": "dir-archiver --src . --dest ../radya.zip --exclude .DS_Store config .git package.json src .gitignore README.md package-lock.json node_modules .babelrc .eslintrc .sasslintrc"
+    "bundle": "dir-archiver --src . --dest ../radya.zip --exclude .DS_Store config .git package.json src .gitignore README.md package-lock.json node_modules .babelrc .eslintrc .sasslintrc"
   },
   "target": "web",
   "dependencies": {
