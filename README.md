@@ -1,26 +1,11 @@
-# Radya: Wordpress starter theme based on Webpack with SASS/PostCSS and babel ES6/7 support.
+# Radya is a custom WordPress theme built with a full-site editing features.
 
-![Maintenance](https://img.shields.io/maintenance/yes/2021?logo=github)
-![webpack-current](https://img.shields.io/badge/webpack-v5.64.0-green?logo=webpack)
-![node-current (scoped)](https://img.shields.io/node/v/@weareathlon/frontend-webpack-boilerplate)
-[![Build Status](https://app.travis-ci.com/WeAreAthlon/frontend-webpack-boilerplate.svg?branch=master)](https://app.travis-ci.com/github/WeAreAthlon/frontend-webpack-boilerplate)
-[![@weareathlon/frontend-webpack-boilerplate](https://snyk.io/advisor/npm-package/@weareathlon/frontend-webpack-boilerplate/badge.svg)](https://snyk.io/advisor/npm-package/@weareathlon/frontend-webpack-boilerplate)
-[![GitHub Issues](https://img.shields.io/github/issues-raw/WeAreAthlon/frontend-webpack-boilerplate)](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/issues)
-[![Known Vulnerabilities](https://snyk.io/test/github/WeAreAthlon/frontend-webpack-boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/WeAreAthlon/frontend-webpack-boilerplate?targetFile=package.json)
-[![npm](https://img.shields.io/npm/dm/@weareathlon/frontend-webpack-boilerplate)](https://www.npmjs.com/package/@weareathlon/frontend-webpack-boilerplate)
-[![GitHub License](https://img.shields.io/github/license/WeAreAthlon/frontend-webpack-boilerplate)](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/blob/master/LICENSE)
-
-![Front-end Webpack Boilerplate](https://repository-images.githubusercontent.com/96102257/4be7b600-61f1-11e9-9ebf-67b17d5ba125)
-
-## Demo
-
-* [Demo page demonstrating building - SASS, JavaScript, Images, Fonts, HTML](https://weareathlon.github.io/frontend-webpack-boilerplate/)
+This package is based on [`frontend-webpack-boilerplate`](https://github.com/WeAreAthlon/frontend-webpack-boilerplate) by [`WeAreAthlon`](https://github.com/WeAreAthlon)
 
 Table of Contents
 =================
 
    * [Webpack 5 Boilerplate Template](#webpack-5-boilerplate-template)
-      * [Demo](#demo)
       * [Features](#features)
       * [Requirements](#requirements)
    * [Setup](#setup)
@@ -63,12 +48,6 @@ Table of Contents
 * The built CSS / JavaScript files will respect the **configured supported browser versions** using the following tools:
   * [`autoprefixer`](https://github.com/postcss/autoprefixer) - automatically adds vendor prefixes to CSS rules
   * [`babel-preset-env`](https://babeljs.io/docs/en/babel-preset-env) - smart preset that allows you to use the latest JavaScript without needing to micromanage which syntax transforms (*and optionally, browser polyfills*) are needed by your target environment(s).
-* Demo project files to be used as a reference and **example demo** building of:
-  * *JavaScript*
-  * *SASS / PostCSS*
-  * *HTML* templates
-  * *Images* (*CSS backgrounds and image tags*)
-  * *Fonts*
 * Support for **assets optimization** for production environment with ability to configure:
   * **Code Minification** of *JavaScript* and *CSS* processed files.
   * **Optimize Assets Loading** - inline and embed **images** / **fonts** files having file size below a *configurable* threshold value.
@@ -121,19 +100,17 @@ $ npm ci
 
 ## Environment Configuration
 
-* Edit the [`configuration/environment.js`](configuration/environment.js) if you want to specify:
+* Edit the [`config/environment.js`](config/environment.js) if you want to specify:
   * **`server`**: configure development server, specify `host`, `port`. Refer to the full development server configuration options for [`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/).
   * **`limits`**: configure file size thresholds for assets optimizations.
     * Image/Font files size in bytes. Below this value the image file will be served as Data URL (_inline base64_).
-  * **`paths`**: `src` or `dist` directories names and file system location.
+  * **`paths`**: `src` or `assets` directories names and file system location.
 
-## Additional `webpack` configuration
-
-You can additionally configure `webpack` for specific environment:
-* `development` - [`configuration/webpack.dev.config.js`](configuration/webpack.dev.config.js)
-* `production` - [`configuration/webpack.prod.config.js`](configuration/webpack.prod.config.js)
-  * Note that if you prefer to build and deploy [`sourcemap`](https://webpack.js.org/configuration/devtool/#production) files:
-> You should configure your server to disallow access to the Source Map file for normal users!
+## Webpack configuration
+* `common` - [`config/webpack.config.js`](config/webpack.dev.config.js)
+* `development` - [`config/webpack.dev.config.js`](config/webpack.dev.config.js)
+* `production` - [`config/webpack.prod.config.js`](config/webpack.prod.config.js)
+  * Note that if you prefer to build and deploy [`sourcemap`](https://webpack.js.org/configuration/devtool/#production) files, you should configure your server to disallow access to the Source Map file for normal users!
 
 # Development
 
@@ -141,10 +118,8 @@ You can additionally configure `webpack` for specific environment:
 
 * **SASS/PostCSS** files are located under `src/scss/`
 * **JavaScript** files with support of latest ECMAScript _ES6 / ECMAScript 2016(ES7)/ etc_ files are located under `src/js/`
-* **Image** files are located under `src/images/`
+* **Image** files are located under `src/img/`
 * **Font** files are located under `src/fonts/`
-* **HTML** files are located under `src/`
-  * It will **automatically** build **all HTML files** placed under `src/` directory, no need to manually configure each template anymore!
 
 ## Build Assets
 
@@ -191,13 +166,10 @@ $ npm run production
 
 ## Get Built Assets
 
-* _CSS_ files are located under `/dist/css/`
-* _JavaScript_ files with support of _ES6 / ECMAScript 2016(ES7)_ files are located under `/dist/js/`
-* _Images_ are located under `/dist/images/`
-  * Images part of the _design_ (_usually referenced in the CSS_) are located under `/dist/images/design/`
-  * Images part of the _content_ (_usually referenced via `<img>` tags_) are located under `/dist/images/content/`
-* _Fonts_ are located under `/dist/fonts/`
-* _HTML_ files are located under `/dist/`
+* _CSS_ files are located under `/assets/css/`
+* _JavaScript_ files with support of _ES6 / ECMAScript 2016(ES7)_ files are located under `/assets/js/`
+* _Images_ are located under `/assets/images/`
+* _Fonts_ are located under `/assets/fonts/`
 
 # Run Code Style Linters
 
