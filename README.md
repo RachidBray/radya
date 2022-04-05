@@ -71,17 +71,16 @@ Table of Contents
 
 ## Installation
 
-1. Choose and download the latest template release from [List of Releases](https://github.com/RachidBray/radya).
-2. Extract the release archive to a new directory, rename it to your project name and browse the directory.
-3. Install all dependencies using `npm` *clean install* command. 
+Clone or download this repository, change its name to something else (like, say, `your-project-name`), and then:
+
+1. Search for `'radya'` (inside single quotations) to capture the text domain and replace with: `'your-project-name'`.
+2. Search for `radya_` to capture all the functions names and replace with: `your-project-name_`.
+3. Search for `Text Domain: radya` in `style.css` and replace with: `Text Domain: your-project-name`.
+4. Install all dependencies using `npm install` command. 
 
 ```sh 
-$ npm ci
+$ npm install
 ```
-
-> More on the clean install npm command can be read here [`npm ci`](https://docs.npmjs.com/cli/ci.html)
-
-> You can still use `npm install` in cases the `npm ci` raises system error due to specific platform incompatibilities.
 
 ## Define Package Metadata
 
