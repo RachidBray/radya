@@ -1,4 +1,4 @@
-# Radya is a custom WordPress theme built with a full-site editing features.
+# Radya is a WordPress starter theme built with a full-site editing features.
 
 This package is based on [`frontend-webpack-boilerplate`](https://github.com/WeAreAthlon/frontend-webpack-boilerplate) by [`WeAreAthlon`](https://github.com/WeAreAthlon)
 
