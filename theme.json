@@ -117,19 +117,14 @@
 			"customLineHeight": true,
 			"fontFamilies": [
 				{
-					"fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif",
-					"name": "Sans Serif",
-					"slug": "sans-serif"
+					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
+					"name": "System Font",
+					"slug": "system-font"
 				},
 				{
-					"fontFamily": "Cambria, Georgia, \"Times New Roman\", Times, serif",
-					"name": "Serif",
-					"slug": "serif"
-				},
-				{
-					"fontFamily": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
-					"name": "Monospace",
-					"slug": "monospace"
+					"fontFamily": "\"Open Sans\", sans-serif",
+					"name": "Open Sans",
+					"slug": "open-sans"
 				}
 			],
 			"fontSizes": [
