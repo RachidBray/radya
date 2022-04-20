@@ -14,33 +14,6 @@
   }
 }
 
-// Media queries
-$breakpoints: (
-  xs: $xs,
-  sm: $sm,
-  md: $md,
-  lg: $lg,
-  xl: $xl
-) !default;
-
-@mixin bp-min($size) {
-  @media only screen and (min-width: map-get($breakpoints, $size)) {
-    @content;
-  }
-}
-@mixin bp-max($size) {
-  @media only screen and (max-width: map-get($breakpoints, $size)) {
-    @content;
-  }
-}
-
-/*
-// Usage:
-@include bp-min(sm) { 
-    body {color:red}
-}
-*/
-
 // Text selection
 @mixin text-selection($color-selection, $color-selection-bg) {
   ::-moz-selection { // sass-lint:disable-line no-vendor-prefixes
