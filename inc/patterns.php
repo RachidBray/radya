@@ -29,7 +29,7 @@ if ( ! function_exists( 'radya_register_block_patterns' ) ) :
 			register_block_pattern_category( $slug, $settings );
 		}
 
-		// The block patterns included in Listimia.
+		// The block patterns included in Radya.
 		$radya_block_patterns = apply_filters( 'radya_block_patterns', array(
 			'radya/example-pattern' => array(
 				'title'         => esc_html__( 'Block pattern description goes here', 'radya' ),

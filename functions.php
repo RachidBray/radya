@@ -1,12 +1,12 @@
 <?php
 /**
- * Listimia functions and definitions
+ * Radya functions and definitions
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-// Listimia's includes directory.
+// Radya's includes directory.
 $radya_inc_dir = 'inc';
 
 // Array of files to include.

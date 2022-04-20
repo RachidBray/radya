@@ -9,7 +9,7 @@ module.exports = {
     output: path.resolve(__dirname, '../assets/'),
   },
   server: {
-    proxy: 'http://listimia.local/',
+    proxy: 'http://radya.local/',
   },
   limits: {
     /* Image files size in bytes. Below this value the image file will be served as DataURL (inline base64). */
