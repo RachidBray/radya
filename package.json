@@ -1,15 +1,15 @@
 {
   "author": "Rachid Braymi <info@addictedtoweb.com> (https://www.addictedtoweb.com/)",
-  "name": "@rachidbray/listimia-v2",
+  "name": "@rachidbray/radya",
   "version": "1.0.0",
   "description": "Wordpress starter theme based on Webpack with SASS/PostCSS and babel ES6/7 support.",
-  "homepage": "https://github.com/RachidBray/listimia-v2",
+  "homepage": "https://github.com/RachidBray/radya",
   "browserslist": [
     "last 2 versions",
     "> 5%"
   ],
   "bugs": {
-    "url": "https://github.com/RachidBray/listimia-v2/issues"
+    "url": "https://github.com/RachidBray/radya/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
@@ -65,7 +65,7 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git@github.com:RachidBray/listimia-v2.git"
+    "url": "git@github.com:RachidBray/radya.git"
   },
   "scripts": {
     "dev": "webpack --config config/webpack.dev.config.js",
@@ -74,7 +74,7 @@
     "lint:sass": "sass-lint -v -q",
     "lint:js": "eslint --ext .js src/js/",
     "stats": "webpack --config config/webpack.prod.config.js --json > assets/stats.json && webpack-bundle-analyzer assets/stats.json",
-    "bundle": "dir-archiver --src . --dest ../listimia.zip --exclude .DS_Store config .git package.json src .gitignore README.md package-lock.json node_modules .babelrc .eslintrc .sasslintrc"
+    "bundle": "dir-archiver --src . --dest ../radya.zip --exclude .DS_Store config .git package.json src .gitignore README.md package-lock.json node_modules .babelrc .eslintrc .sasslintrc"
   },
   "target": "web",
   "dependencies": {

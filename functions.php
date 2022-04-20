@@ -7,16 +7,16 @@
 defined( 'ABSPATH' ) || exit;
 
 // Listimia's includes directory.
-$listimia_inc_dir = 'inc';
+$radya_inc_dir = 'inc';
 
 // Array of files to include.
-$listimia_includes = array(
+$radya_includes = array(
 	'/setup.php',                           // Theme setup and custom theme supports.
 	'/enqueue.php',                         // Enqueue scripts and styles.
 	'/patterns.php',                  		// Block Patterns
 );
 
 // Include files.
-foreach ( $listimia_includes as $file ) {
-	require_once get_theme_file_path( $listimia_inc_dir . $file );
+foreach ( $radya_includes as $file ) {
+	require_once get_theme_file_path( $radya_inc_dir . $file );
 }

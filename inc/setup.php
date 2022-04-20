@@ -2,8 +2,8 @@
 /**
  * Theme Setup.
  */
-if ( ! function_exists( 'listimia_theme_support' ) ) {
-    function listimia_theme_support() {
+if ( ! function_exists( 'radya_theme_support' ) ) {
+    function radya_theme_support() {
 
         // Add support for post thumbnails.
         add_theme_support( 'post-thumbnails' );
@@ -17,7 +17,7 @@ if ( ! function_exists( 'listimia_theme_support' ) ) {
         // Add support for editor styles.
         add_theme_support( 'editor-styles' );
     }
-    add_action( 'after_setup_theme', 'listimia_theme_support' );
+    add_action( 'after_setup_theme', 'radya_theme_support' );
 
     // Disable Block Directory: https://github.com/WordPress/gutenberg/blob/trunk/docs/reference-guides/filters/editor-filters.md#block-directory
     remove_action( 'enqueue_block_editor_assets', 'wp_enqueue_editor_block_directory_assets' );
