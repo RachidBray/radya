@@ -1,0 +1,29 @@
+/* 
+* Navigation 
+*/
+.wp-block-navigation-item {
+	&.is-style-outline,
+	&.is-style-fill {
+		a {
+			border-radius: var(--wp--custom--button--border--radius);
+			font-family: var(--wp--preset--font-family--primary);
+			font-size: var(--wp--custom--button--typography--font-size);
+			font-weight: var(--wp--custom--button--typography--font-weight);
+			line-height: var(--wp--custom--button--typography--line-height);
+			padding: var(--wp--custom--button--spacing--padding--top) var(--wp--custom--button--spacing--padding--left);
+		}
+	}
+	&.is-style-fill {
+		a {
+			background-color: var(--wp--custom--button--color--background);
+			color: var(--wp--custom--button--color--text);
+		}
+	}
+	&.is-style-outline {
+		a {
+			background-color: transparent;
+			color: currentColor;
+			border: 2px solid;
+		}
+	}
+}

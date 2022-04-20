@@ -1,36 +1,9 @@
-/* Core variables */
-@import 'base/vars';
+@import 'base/index';
 
-/* Mixins, helpers and functions */
-@import 'base/mixins';
+@import 'blocks/index';
 
-/* CSS Reset */
-@import 'base/normalize';
+@import 'elements/index';
 
-/* CSS print */
-@import 'base/print';
+@import 'layout/index';
 
-/* Fonts */
-@import 'base/fonts';
-
-/* Typography */
-@import 'base/typography';
-
-/* Colors */
-@import 'base/colors';
-
-/* Utility classes */
-@import 'base/utility';
-
-/* Vendor */
-
-/* Components */
-@import 'components/button';
-@import 'components/form';
-
-/* Layouts */
-@import 'layout/header';
-@import 'layout/footer';
-
-/* Browser specific styles */
-@import 'hacks/hacks';
+@import 'hacks/index';

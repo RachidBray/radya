@@ -2,8 +2,8 @@
 /**
  * Enqueue frontend assets.
  */
-if ( ! function_exists( 'radya_frontend_assets' ) ) {
-    function radya_frontend_assets() {
+if ( ! function_exists( 'listimia_frontend_assets' ) ) {
+    function listimia_frontend_assets() {
         $theme_version = wp_get_theme()->get( 'Version' );
 
         // 1. Styles.
@@ -17,16 +17,16 @@ if ( ! function_exists( 'radya_frontend_assets' ) ) {
         // 2. Scripts.
         wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/assets/js/main.js', array(), $theme_version, true );
     }
-    add_action( 'wp_enqueue_scripts', 'radya_frontend_assets' );
+    add_action( 'wp_enqueue_scripts', 'listimia_frontend_assets' );
 }
 
 /**
  * Enqueue editor assets.
  */
-if ( ! function_exists( 'radya_editor_assets' ) ) {
-    function radya_editor_assets() {
+if ( ! function_exists( 'listimia_editor_assets' ) ) {
+    function listimia_editor_assets() {
         add_editor_style( 'assets/css/editor.css' );
     }
 
-    add_action( 'admin_init', 'radya_editor_assets' );
+    add_action( 'admin_init', 'listimia_editor_assets' );
 }

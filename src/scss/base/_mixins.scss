@@ -5,6 +5,7 @@
 // Clearfix
 // http://www.cssmojo.com/latest_new_clearfix_so_far/
 // Other clearfix options: https://github.com/stubbornella/oocss/blob/master/oocss/src/components/utils/_clearfix-me.scss
+
 @mixin clearfix {
   &::after {
     clear: both;
@@ -64,4 +65,22 @@ $breakpoints: (
   :-moz-placeholder           {@content}
   ::-moz-placeholder          {@content}
   :-ms-input-placeholder      {@content}
+}
+
+@mixin post-meta-icon {
+	display: flex;
+	flex-wrap: wrap;
+	&:before {
+		align-self: center;
+		content: '';
+		display: inline-block;
+		margin-right: calc(0.5 * var(--wp--custom--gap--baseline) );
+		height: 16px;
+		width: 16px;
+		mask-size: contain;
+		-webkit-mask-size: contain;
+		mask-repeat: no-repeat;
+		-webkit-mask-repeat: no-repeat;
+		background-color: currentColor;
+	}
 }

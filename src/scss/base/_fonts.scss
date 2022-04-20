@@ -1,11 +1,17 @@
-/**
- * Fonts
-*/
+@font-face {
+	font-family: 'Open Sans';
+  font-weight: 300 800;
+	font-stretch: 75% 100%;
+  font-style: normal;
+  font-display: swap;
+	src: url('../fonts/OpenSans-Variable.woff2') format('woff2');
+}
 
 @font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/OpenSans-Regular.eot?") format("eot"),
-  url("../fonts/OpenSans-Regular.woff") format("woff"),
-  url("../fonts/OpenSans-Regular.ttf") format("truetype");
-  font-style: normal;
+	font-family: 'Open Sans';
+  font-weight: 300 800;
+	font-stretch: 75% 100%;
+  font-style: italic;
+  font-display: swap;
+	src: url('../fonts/OpenSansItalic-Variable.woff2') format('woff2');
 }

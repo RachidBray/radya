@@ -1,19 +1,20 @@
 {
   "author": "Rachid Braymi <info@addictedtoweb.com> (https://www.addictedtoweb.com/)",
-  "name": "@rachidbray/radya",
+  "name": "@rachidbray/listimia-v2",
   "version": "1.0.0",
   "description": "Wordpress starter theme based on Webpack with SASS/PostCSS and babel ES6/7 support.",
-  "homepage": "https://github.com/rachidbray/radya",
+  "homepage": "https://github.com/RachidBray/listimia-v2",
   "browserslist": [
     "last 2 versions",
     "> 5%"
   ],
   "bugs": {
-    "url": "https://github.com/RachidBray/radya/issues"
+    "url": "https://github.com/RachidBray/listimia-v2/issues"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.0",
+    "@babel/core": "^7.17.9",
     "@babel/preset-env": "^7.16.0",
+    "@wordpress/base-styles": "^4.3.0",
     "autoprefixer": "^10.4.0",
     "babel-loader": "^8.2.3",
     "browser-sync": "^2.27.7",
@@ -22,9 +23,9 @@
     "copy-webpack-plugin": "^9.1.0",
     "css-loader": "^6.5.1",
     "css-minimizer-webpack-plugin": "^3.1.1",
-    "eslint": "^8.2.0",
+    "eslint": "^8.13.0",
     "eslint-config-airbnb": "^19.0.0",
-    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.27.0",
     "eslint-plugin-react-hooks": "^4.3.0",
@@ -36,11 +37,11 @@
     "mini-css-extract-plugin": "^2.4.4",
     "postcss": "^8.3.11",
     "postcss-loader": "^6.2.0",
-    "sass": "^1.43.4",
+    "sass": "^1.50.1",
     "sass-lint": "^1.13.1",
     "sass-loader": "^12.3.0",
     "terser-webpack-plugin": "^5.2.5",
-    "webpack": "^5.67.0",
+    "webpack": "^5.72.0",
     "webpack-bundle-analyzer": "^4.5.0",
     "webpack-cli": "^4.9.1",
     "webpack-merge": "^5.8.0",
@@ -64,7 +65,7 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git@github.com:RachidBray/radya.git"
+    "url": "git@github.com:RachidBray/listimia-v2.git"
   },
   "scripts": {
     "dev": "webpack --config config/webpack.dev.config.js",
@@ -73,7 +74,7 @@
     "lint:sass": "sass-lint -v -q",
     "lint:js": "eslint --ext .js src/js/",
     "stats": "webpack --config config/webpack.prod.config.js --json > assets/stats.json && webpack-bundle-analyzer assets/stats.json",
-    "bundle": "dir-archiver --src . --dest ../radya.zip --exclude .DS_Store config .git package.json src .gitignore README.md package-lock.json node_modules .babelrc .eslintrc .sasslintrc"
+    "bundle": "dir-archiver --src . --dest ../listimia.zip --exclude .DS_Store config .git package.json src .gitignore README.md package-lock.json node_modules .babelrc .eslintrc .sasslintrc"
   },
   "target": "web",
   "dependencies": {
